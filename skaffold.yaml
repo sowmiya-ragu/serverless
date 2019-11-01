@@ -25,7 +25,7 @@ profiles:
     helm:
       releases:
       - name: serverless-jenkins-demo
-        chartPath: charts/serverless-jenkins-demo
+        chartPath: charts/serverless
         setValueTemplates:
           image.repository: "{{.JENKINS_X_DOCKER_REGISTRY_SERVICE_HOST}}:{{.JENKINS_X_DOCKER_REGISTRY_SERVICE_PORT}}/rawlingsj/serverless-jenkins-demo"
           image.tag: "{{.DIGEST_HEX}}"
