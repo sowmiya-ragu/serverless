@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: 823024120868.dkr.ecr.us-west-2.amazonaws.com/hack19-hub/serverless
+  tag: 0.0.2
   pullPolicy: IfNotPresent
 service:
   name: serverless-jenkins-demo
